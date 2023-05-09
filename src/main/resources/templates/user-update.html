@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/main.css}"/>
+    <title>Изменение</title>
+</head>
+<body>
+<a th:href ="'/user'" >Назад</a>
+
+<form method="post">
+    <input type="text" th:value="@{user.email}"  name="username" placeholder="Введите email">
+    <input type="password" name="password" th:value="@{user.password}" placeholder="Введите пароль">
+    <button type="submit">Изменить</button>
+</form>
+
+</body>
+</html>
